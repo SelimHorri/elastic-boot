@@ -25,7 +25,7 @@ public final class Person implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id
-	private String employeeId;
+	private String personId;
 	private String fname;
 	private String lname;
 	
