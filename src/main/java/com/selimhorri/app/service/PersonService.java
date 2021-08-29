@@ -7,9 +7,9 @@ import com.selimhorri.app.model.Person;
 public interface PersonService {
 	
 	List<Person> findAll();
-	Person findById(final String employeeId);
+	Person findById(final String personId);
 	Person save(final Person person);
 	Person update(final Person person);
-	void deleteById(final String employeeId);
+	void deleteById(final String personId);
 	
 }

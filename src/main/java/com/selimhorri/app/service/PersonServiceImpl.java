@@ -30,8 +30,8 @@ public class PersonServiceImpl implements PersonService {
 	}
 	
 	@Override
-	public Person findById(String employeeId) {
-		return this.personRepository.findById(employeeId).orElseThrow(NoSuchElementException::new);
+	public Person findById(String personId) {
+		return this.personRepository.findById(personId).orElseThrow(NoSuchElementException::new);
 	}
 	
 	@Override
@@ -45,8 +45,8 @@ public class PersonServiceImpl implements PersonService {
 	}
 	
 	@Override
-	public void deleteById(String employeeId) {
-		this.personRepository.deleteById(employeeId);
+	public void deleteById(String personId) {
+		this.personRepository.deleteById(personId);
 	}
 	
 	
